@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".KayitEtkinligi" >
+
+    <TextView
+        android:id="@+id/titleLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hoşgeldiniz"
+        style="@style/TextAppearance.MaterialComponents.Headline3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Uygulamamıza Hoşgeldiniz"
+        android:layout_below="@id/titleLabelTv"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <!--isim-->
+    <TextView
+        android:id="@+id/tvisim"
+        android:layout_above="@id/tvsoyisim"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="İsminiz :"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+    />
+
+
+    <!--soyisim-->
+    <TextView
+        android:id="@+id/tvsoyisim"
+        android:layout_above="@id/tvemail"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Soyisminiz :"
+        android:layout_centerHorizontal="true"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+    />
+
+
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="E-mail :"
+        android:layout_centerHorizontal="true"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        />
+
+
+    <!--BUTON-->
+    <Button
+        android:id="@+id/mgirisbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:layout_below="@id/tvemail"
+        android:layout_marginTop="10dp" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".KayitEtkinligi" >
+
+    <TextView
+        android:id="@+id/titleLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Kayıt Ekranı"
+        style="@style/TextAppearance.MaterialComponents.Headline4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Burdan Kayıt Olabilirsin"
+        android:layout_below="@id/titleLabelTv"
+        style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+    <!--İSİM-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/isimtil"
+        android:layout_above="@id/soyisimtil"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/isimet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="isim"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--SOYİSİM-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/soyisimtil"
+        android:layout_above="@id/emailtil"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/soyisimet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Soyisim"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--EMAIL-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailtil"
+        android:layout_above="@id/sifretil"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/emailet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--ŞİFRE-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sifretil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/sifreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--BUTON-->
+    <Button
+        android:id="@+id/kayıtbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kaydol"
+        android:layout_below="@id/sifretil"
+        android:layout_marginTop="10dp" />
+
+
+
+
+
+</RelativeLayout>
